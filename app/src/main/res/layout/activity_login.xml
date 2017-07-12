@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="com.app3.imsaiful.saif_log.LoginActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Name:  "
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:id="@+id/user_Name_id"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_Name_id"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="10dp"
+
+            android:id="@+id/uname"
+
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:    "
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/user_Name_id"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+
+        android:id="@+id/user_password_id"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_password_id"
+        android:layout_below="@+id/uname"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/upas"
+        android:inputType="textPassword"
+
+        android:layout_marginTop="-12dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/upas"
+        android:paddingTop="25dp"
+        android:onClick="onLogin"
+        android:id="@+id/ulog"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attempt"
+        android:layout_below="@+id/ulog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"/>
+</RelativeLayout>
